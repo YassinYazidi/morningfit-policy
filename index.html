@@ -1,16 +1,27 @@
 <!doctype html>
+<!--
+  MorningFit — hosted privacy policy page (PUBLISH SOURCE).
+  Deploy: replace index.html in the yassinyazidi/morningfit-policy GitHub
+  Pages repo with this file. The app loads it remotely at
+  https://yassinyazidi.github.io/morningfit-policy/ (see PRIVACY_POLICY_URL
+  in www/js/21-me.js) — nothing under www/ may duplicate this copy.
+  Typeface must stay Tajawal to match the app (www/css/core/fonts.css).
+-->
 <html lang="ar" dir="rtl" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="MorningFit privacy policy / سياسة الخصوصية لتطبيق MorningFit">
   <title>سياسة الخصوصية | MorningFit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
     :root { color-scheme: light; }
     * { box-sizing: border-box; }
     html[data-theme="light"] { color-scheme: light; --pp-bg: #ffffff; --pp-ink: #18302b; --pp-muted: #50645d; --pp-card-border: #e6eeea; }
     html[data-theme="dark"] { color-scheme: dark; --pp-bg: #0b0b08; --pp-ink: #ffffff; --pp-muted: #b8c4be; --pp-card-border: #2a2f2c; }
-    body { margin: 0; padding: 0; background: var(--pp-bg); color: var(--pp-ink); font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif; line-height: 1.8; }
+    body { margin: 0; padding: 0; background: var(--pp-bg); color: var(--pp-ink); font-family: "Tajawal", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif; line-height: 1.8; }
     main { padding: 18px 20px 24px; }
     h3 { margin: 22px 0 6px; font-size: 16px; font-weight: 800; color: var(--pp-ink); }
     h3:first-child { margin-top: 0; }
@@ -23,10 +34,11 @@
 <body>
   <main id="policyRoot" aria-live="polite"></main>
   <script>
-    /* MorningFit — PrivacyPolicy.html — offline in-app policy file.
-       Loaded inside #screen-privacy via an <iframe>. No network calls:
-       copy for both locales is embedded below and mirrors
-       STRINGS.me.privacyPage (www/data/i18n/{ar,en}.json). */
+    /* MorningFit — hosted privacy policy.
+       Rendered from the ?lang= (ar|en) and ?theme= (light|dark) query params
+       the app passes in the iframe src. No network calls besides the Tajawal
+       webfont above: all copy is embedded so the page also paints offline
+       from cache once visited. */
     (function () {
       var COPY = {
         ar: {
